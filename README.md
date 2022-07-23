@@ -1,4 +1,4 @@
-# pg-generator-example
+# @npmstuff/pg-generator-example
 
 Example plugin for pg-generator, that creates model files for several ORMs and other purposes.
 
