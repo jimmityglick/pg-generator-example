@@ -1,6 +1,6 @@
 {
   "name": "@npmstuff/pg-generator-example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Example plugin for pg-generator, that creates model files for several ORMs and other purposes.",
   "author": {
     "name": "Özüm Eldoğan",

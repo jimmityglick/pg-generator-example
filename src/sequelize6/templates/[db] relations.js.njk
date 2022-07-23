@@ -7,7 +7,7 @@
 {%- for table in db.tables %}
 {%- if table.relations.length > 0 %}
 {# Decide whether to include schema name by reading `addSchemaName` boolean value from extra context. Apply `dboClassName` filter -#}
-import {{ table | dboClassName(addSchemaName) }} from "./{{ table.schema.name | dashCase }}-{{ table.name | dashCase }}";
+import {{ table | dboClassName(addSchemaName) }} from "./{{ table.schema.name | dashCase }}.{{ table.name | dashCase }}";
 {%- endif %}
 {%- endfor %}
 
