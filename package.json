@@ -1,6 +1,6 @@
 {
   "name": "@npmstuff/pg-generator-example",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Example plugin for pg-generator, that creates model files for several ORMs and other purposes.",
   "author": {
     "name": "Özüm Eldoğan",
@@ -40,8 +40,8 @@
     "readme": "node module-files/scripts/tsmod.js readme",
     "prebuild": "rm -rf dist && copyup --all --exclude \"**/*.ts\" \"src/**/*\" dist",
     "build": "tsc",
-    "_preinstall": "npx not-sync node_modules",
-    "_postinstall": "is-ci || husky install",
+    "preinstall": "npx not-sync node_modules",
+    "postinstall": "is-ci || husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "tsmod": "node module-files/scripts/tsmod.js",
