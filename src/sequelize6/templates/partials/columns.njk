@@ -15,7 +15,7 @@
     allowNull: {{ not column.notNull }},
 
     {%- if column.isPrimaryKey %}
-    primaryKey: "true",
+    primaryKey: true,
     {%- endif %}
 
     {%- if column.uniqueIndexesNoPk[0].length > 0 %}
@@ -28,7 +28,7 @@
     {%- endif %}
 
     {%- if column.isSerial %}
-    autoIncrement: "true",
+    autoIncrement: true,
     {%- endif %}
 
     {%- if column.commentWithoutData %}
